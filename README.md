@@ -1,2 +1,2 @@
 # Bamako
-Essai de site vitrine pour restaurant Maline
+Essai de site vitrine pour restaurant Malien

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171717">
+    <meta name="description" content="Découvrez l’authenticité de la cuisine ouest-africaine chez Au Petit Bamako.">
+    <title>Au Petit Bamako — Cuisine ouest-africaine authentique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="Navigation principale">
+            <a class="brand" href="#accueil">Au Petit <span>Bamako</span></a>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#menu">La carte</a></li>
+                <li><a href="#traiteur">Traiteur</a></li>
+                <li><a href="#apropos">Notre histoire</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="fullscreenButton" class="fullscreen-button" type="button" aria-pressed="false">Plein écran</button>
+        </nav>
+        <p id="fullscreenStatus" class="fullscreen-status" role="status" aria-live="polite"></p>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Un héritage vivant, des recettes généreuses</p>
+                <h1>L’authenticité de la cuisine ouest-africaine.</h1>
+                <p class="hero-copy">Aw Bisimillah, Bienvenue, Welcome</p>
+                <a class="button" href="#menu">Découvrir la carte</a>
+            </div>
+        </section>
+
+        <section id="menu" class="section menu-section">
+            <div class="section-inner">
+                <p class="eyebrow">Faits maison, avec le cœur</p>
+                <h2 class="section-heading">Nos spécialités</h2>
+                <p class="section-intro">Des classiques maliens cuisinés avec patience, des produits simples et juste ce qu’il faut de piment.</p>
+
+                <div class="cards">
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800&auto=format&fit=crop&q=85" alt="Plat de mafé en sauce" loading="lazy">
+                        <div class="card-content">
+                            <h3>Mafé</h3>
+                            <p>Une sauce onctueuse à l’arachide, mijotée aux épices et servie avec du riz.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&auto=format&fit=crop&q=85" alt="Assiette de yassa maison" loading="lazy">
+                        <div class="card-content">
+                            <h3>Yassa maison</h3>
+                            <p>Une marinade généreuse aux oignons et au citron, relevée juste comme il faut.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&auto=format&fit=crop&q=85" alt="Dessert frais au yaourt et aux fruits" loading="lazy">
+                        <div class="card-content">
+                            <h3>Dégué</h3>
+                            <p>Un dessert frais et gourmand à base de mil et de lait caillé.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="traiteur" class="section catering-section">
+            <div class="section-inner catering-layout">
+                <div class="catering-copy">
+                    <p class="eyebrow">Vos événements, nos saveurs</p>
+                    <h2 class="section-heading">Le service traiteur d’Au Petit Bamako</h2>
+                    <p>Retrouvez l’authenticité de la cuisine ouest-africaine pour vos fêtes, réceptions et repas en famille. Parlez-nous de votre événement : nous échangerons avec vous sur le menu et votre demande.</p>
+                    <a class="button" href="#contact">Demander un devis</a>
+                </div>
+                <div class="catering-occasions" aria-label="Événements pour le service traiteur">
+                    <p><span>01</span> Mariages et célébrations</p>
+                    <p><span>02</span> Réceptions et événements</p>
+                    <p><span>03</span> Repas de famille et commandes</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" class="section about-section">
+            <div class="section-inner">
+                <p class="eyebrow">Aw bisimilah — bienvenue chez nous</p>
+                <h2 class="section-heading">Plus qu’un repas, un moment de partage.</h2>
+                <p>Au Petit Bamako est un restaurant qui vous invite à découvrir les saveurs authentiques de la cuisine malienne et ouest-africaine dans une ambiance chaleureuse et conviviale.<br>À travers des plats généreux et des recettes traditionnelles, le restaurant met à l’honneur la richesse de la gastronomie ouest-africaine et le plaisir de partager un bon repas. Une adresse où authenticité, gourmandise et hospitalité se rencontrent.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-inner contact-layout">
+                <div>
+                    <p class="eyebrow">On se parle ?</p>
+                    <h2 class="section-heading">Contactez-nous</h2>
+                    <p class="contact-note">Une question, une réservation ou un projet traiteur ? Décrivez-nous votre demande pour que nous puissions en discuter.</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <label for="name">Votre nom</label>
+                    <input id="name" name="name" type="text" autocomplete="name" placeholder="Hawa DIARRA" required>
+                    <label for="email">Votre e-mail</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.com" required>
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" placeholder="Parlez-nous de votre événement ou de votre demande." required></textarea>
+                    <button class="button" type="submit">Envoyer le message</button>
+                    <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Au Petit Bamako · Cuisine malienne, faite avec le cœur.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
